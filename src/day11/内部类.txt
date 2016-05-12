@@ -1,0 +1,6 @@
+OuterClass$InnerClass 成员内部类  //Outer类里面定义的类详见 JavaInnerClass.java
+OuterClass1$InnerClass 静态内部类 //Outer类里面定义的静态类详见 JavaInnerClass.java
+OuterClass$1InnerClass 成员局部类 //Outer类方法里的类详见JavaClassLocalInner.java
+return new 抽象类或者接口类() { // 匿名成员内部类
+			重写里面的方法
+		}; 
