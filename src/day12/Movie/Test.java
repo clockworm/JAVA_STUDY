@@ -1,5 +1,9 @@
 package day12.Movie;
 
+import day12.Movie.Client;
+import day12.Movie.Movie;
+import day12.Movie.Rent;
+
 public class Test {
 	public static void main(String[] args) {
 		//影片信息

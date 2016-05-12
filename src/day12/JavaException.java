@@ -77,6 +77,5 @@ class Person {
 class UsernameException extends Exception {
 	public UsernameException(String message) {
 		 super(message);
-//		System.out.println(message);
 	}
 }

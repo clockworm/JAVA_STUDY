@@ -31,6 +31,33 @@ public class Job{
 		int year = 2000; //年
 		int m = 2; //月
 		int day = 20; //天
+		int count = getEveryMouth_Days(year, m);
+		count = count + day;
+		System.out.println(year+"年已经过去了"+count+"天");	
+
+		//作业4：
+		int a1 = 13; 
+		int a2 = 4; 
+		int a3 = 9; 
+		if (a1<a2) {
+			a1 = a1^a2;
+			a2 = a1^a2;
+			a1 = a1^a2;
+		}
+		if (a1<a3) {
+			a1 = a1^a3;
+			a3 = a1^a3;
+			a1 = a1^a3;
+		}
+		if (a2<a3) {
+			a2 = a2^a3;
+			a3 = a2^a3;
+			a2 = a2^a3;
+		}
+		System.out.println(a1+" > "+a2+" > "+a3);
+	}
+
+	public static int getEveryMouth_Days(int year, int m) {
 		int count = 0; 
 		switch (m-1) {
 			case 11:
@@ -59,28 +86,6 @@ public class Job{
 			case 1:
 				count+=31;
 		}
-		count = count + day;
-		System.out.println(year+"年已经过去了"+count+"天");	
-
-		//作业4：
-		int a1 = 13; 
-		int a2 = 4; 
-		int a3 = 9; 
-		if (a1<a2) {
-			a1 = a1^a2;
-			a2 = a1^a2;
-			a1 = a1^a2;
-		}
-		if (a1<a3) {
-			a1 = a1^a3;
-			a3 = a1^a3;
-			a1 = a1^a3;
-		}
-		if (a2<a3) {
-			a2 = a2^a3;
-			a3 = a2^a3;
-			a2 = a2^a3;
-		}
-		System.out.println(a1+" > "+a2+" > "+a3);
+		return count;
 	}
 }
